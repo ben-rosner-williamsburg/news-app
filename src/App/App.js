@@ -22,6 +22,7 @@ function App() {
     <main className='news-app'>
       <Routes>
         <Route path="/" element={<MainPage articles={articles} error={error} />} />
+        <Route path="/details/:id" />
       </Routes>
     </main>
   );

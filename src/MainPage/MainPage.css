@@ -1,0 +1,27 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  background-color: #212529;
+  color: #adb5bd;
+  align-items: center;
+  border: 1px solid #adb5bd;
+}
+
+.article-item {
+  color: #e9ecef;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.9em;
+}
+
+.name {
+  font-weight: bolder;
+}
+
+.image {
+  width: 20vw;
+  height: 20vh;
+}
+
+.description {
+  text-align: center;
+}
