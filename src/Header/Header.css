@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  background-color: #6c757d;
+  justify-content: center;
+}
+
+.heading {
+  color: #f8f9fa;
+  font-size: 3em;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: .03em;
+}
