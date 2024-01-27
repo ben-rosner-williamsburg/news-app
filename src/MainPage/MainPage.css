@@ -25,3 +25,7 @@
 .description {
   text-align: center;
 }
+
+.search-container {
+  justify-content: center;
+}

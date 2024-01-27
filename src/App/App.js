@@ -1,36 +1,54 @@
-import { getArticles } from '../apiCalls';
 import { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import MainPage from "../MainPage/MainPage"
 import DetailsPage from '../DetailsPage/DetailsPage'
-import {v4 as uuidv4} from 'uuid'
+import { v4 as uuidv4 } from 'uuid'
+import data from "../data.json"
 
 function App() {
   const [articles, setArticles] = useState([])
+  const [article, setArticle] = useState({})
   const [error, setError] = useState("")
   const [query, setQuery] = useState("")
 
   useEffect(() => {
-    getArticles(query)
-    .then((articleData) => {
-      const articleswithIds = articleData.articles.map(article => ({
-        ...article, 
-        id: uuidv4()
-      }))
-      setArticles(articleswithIds)
-    })
-    .catch((err) => {
-      setError(err.message)
-    })
-  }, [])
+    const simulateFetch = () => {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve(data);
+        }, 1000);
+      });
+    }
 
+    simulateFetch()
+      .then((fetchedData) => {
+        const articlesWithIds = fetchedData.articles.map(article => ({
+          ...article,
+          id: uuidv4()
+        }));
+        setArticles(articlesWithIds);
+      })
+      .catch((err) => {
+        setError(err.message);
+      });
+  }, [query]); 
+
+  const handleClick = (id) => {
+    findArticle(id)
+  }
+
+  const findArticle = (id) => {
+    const articleSelected = articles.find(article => article.id === id)
+    setArticle(articleSelected)
+
+  }
 
   return (
     <main className='news-app'>
       <Routes>
-        <Route path="/" element={<MainPage articles={articles} setQuery={setQuery} query={query}/>} />
-        <Route path="/details/:id" element={<DetailsPage articles={articles}/>} />
+        <Route path="/" element={<MainPage articles={articles} setQuery={setQuery} handleClick={handleClick}/>} />
+        <Route path="/details/:id" element={<DetailsPage article={article}/>} />
       </Routes>
     </main>
   );

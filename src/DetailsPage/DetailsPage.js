@@ -1,12 +1,26 @@
-import './DetailsPage.css'
-import { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import "./DetailsPage.css";
+import {Link} from 'react-router-dom'
 
-function DetailsPage({}) {
-  const [article, setArticle] = useState([])
-  const params = useParams();
-  const navigate = useNavigate();
-  let id = params.id;
+function DetailsPage({ article }) {
+  console.log(article);
+  return (
+    <div>
+      <div className="back-text-container">
+        <Link to={"/"} className="back-text">Back</Link>
+      </div>
+      <div className="details" key={article.id}>
+        <h1> {article.name}</h1>
+        <img
+          className="article-item image"
+          src={article.urlToImage}
+          alt={article.description}
+        />
+        <p className="article-item date">{article.publishedAt}</p>
+        <p className="article-item content">{article.content}</p>
+        <p className="article-item source">{article.source.name}</p>
+      </div>
+    </div>
+  );
 }
 
 export default DetailsPage;
