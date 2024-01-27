@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "totalResults": 2606,
+  "articles": [
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Nathan Ingraham",
+      "title": "Volkswagen thinks ChatGPT integration will make its in-car voice assistant good",
+      "description": "AI is literally everywhere, so it's not a big surprise to learn that Volkswagen is planning to bring ChatGPT to its vehicles. As part of its CES 2024 announcements, the automaker says that its existing IDA voice assistant will work with ChatGPT across a range…",
+      "url": "https://www.engadget.com/volkswagen-thinks-chatgpt-integration-will-make-its-in-car-voice-assistant-good-160033466.html",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/eHmalXGi3BQ2aoiL3SRwYg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03MzY-/https://s.yimg.com/os/creatr-uploaded-images/2024-01/f67ba670-ae41-11ee-a7ff-21e1454b1d62",
+      "publishedAt": "2024-01-08T16:00:33Z",
+      "content": "AI is literally everywhere, so it's not a big surprise to learn that Volkswagen is planning to bring ChatGPT to its vehicles. As part of its CES 2024 announcements, the automaker says that its existi… [+2390 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Boing Boing"
+      },
+      "author": "Popkin",
+      "title": "At Mystery Search, your query will redirect you to the last user's search results",
+      "description": "On Mystery Search, your query will redirect you to the last user's search results. For example, if I search \"cats\" and then you search \"bananas\", you will be taken to the search result for cats, and the person after you will be taken to the results for banana…",
+      "url": "https://boingboing.net/2024/01/16/at-mystery-search-your-query-will-redirect-you-to-the-last-users-search-results.html",
+      "urlToImage": "https://boingboing.net/wp-content/uploads/2024/01/Screen-Shot-2024-01-15-at-3.23.15-PM-1.png",
+      "publishedAt": "2024-01-16T13:40:52Z",
+      "content": "On Mystery Search, your query will redirect you to the last user's search results. For example, if I search \"cats\" and then you search \"bananas\", you will be taken to the search result for cats, and … [+356 chars]"
+    },
+    {
+      "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Lauren Goode",
+      "title": "OpenAI’s New App Store Could Turn ChatGPT Into an Everything App",
+      "description": "A new app store from the creator of ChatGPT invites companies to build custom “GPTs” that add functionality to the chatbot. OpenAI isn’t saying how app builders will get paid.",
+      "url": "https://www.wired.com/story/openais-app-store-chatgpt-everything-app/",
+      "urlToImage": "https://media.wired.com/photos/659dea253c3265d9861e56fd/191:100/w_1280,c_limit/ChatGPT-App-Store-Business-1692036066.jpg",
+      "publishedAt": "2024-01-10T17:00:00Z",
+      "content": "ChatGPT also functions as a kind of translator or helper for GPT apps. When WIRED asked the AllTrails GPT to suggest a two-hour hike in Berkeley, California, ChatGPT responded by asking how strenuous… [+3420 chars]"
+    }
+  ]}

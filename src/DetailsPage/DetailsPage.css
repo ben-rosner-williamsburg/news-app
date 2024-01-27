@@ -1,0 +1,29 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  background-color: #212529;
+  color: #adb5bd;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #adb5bd;
+  height: 100vh;
+  overflow: auto;
+}
+
+.back-text-container {
+  display: flex;
+  align-items: center;
+  background-color: #adb5bd;
+  height: 10vh;
+}
+
+.content {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.back-text {
+  color:#212529;
+  font-size: 2.5em;
+  text-decoration: none;
+}
