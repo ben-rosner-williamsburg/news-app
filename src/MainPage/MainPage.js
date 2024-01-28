@@ -8,11 +8,13 @@ const MainPage = ({ articles, setQuery, handleClick}) => {
     return (
       <Link className="article" key={article.id} to={`/details/${article.id}`} onClick={() => handleClick(article.id)}>
         <h3 className="article-item name">{article.title}</h3>
+        <div className="img-container">
         <img
           className="article-item image"
           src={article.urlToImage}
           alt={article.description}
         />
+        </div>
         <p className="article-item description">{article.description}</p>
         <p className="article-date date">{article.publishedAt}</p>
       </Link>
