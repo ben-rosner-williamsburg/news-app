@@ -8,11 +8,51 @@
   height: 5vh;
 }
 
-.search-button {
-  border-radius: 1vw;
-  color: #e9ecef;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #6c757d;
-  font-size: 1vw;
-  font-weight: bolder;
+@media only screen and (max-width: 1440px) {
+  .search-input {
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .search-input {
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-input {
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .search-input {
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .search-input {
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  .search-input {
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+  }
 }

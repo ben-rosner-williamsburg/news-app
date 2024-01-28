@@ -1,6 +1,5 @@
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import "./Search.css";
-import debounce from "lodash/debounce";
 
 const Search = ({ setQuery }) => {
   const [searchInputValue, setSearchInputValue] = useState("")
