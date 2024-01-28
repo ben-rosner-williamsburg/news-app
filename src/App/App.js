@@ -41,7 +41,6 @@ function App() {
   const findArticle = (id) => {
     const articleSelected = articles.find(article => article.id === id)
     setArticle(articleSelected)
-
   }
 
   return (

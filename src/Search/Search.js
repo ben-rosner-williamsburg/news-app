@@ -1,6 +1,5 @@
 import "./Search.css";
 import { useEffect, useState } from "react";
-import { getArticles } from "../apiCalls";
 import {debounce} from "lodash";
 
 
