@@ -1,17 +1,16 @@
+import { useCallback, useEffect, useState } from "react";
 import "./Search.css";
-import { useEffect, useState } from "react";
-import {debounce} from "lodash";
+import debounce from "lodash/debounce";
 
+const Search = ({ setQuery }) => {
+  const [searchInputValue, setSearchInputValue] = useState("")
 
-const Search = ({setQuery}) => {
-  const [searchInput, setSearchInput] = useState("");
-  const handleSearch = (query) => {console.log("Searching for:", query)}
-  useEffect(() => {
-    const debouncedSearch = debounce(handleSearch, 1000)
-    if (searchInput) {
-      debouncedSearch(searchInput)
-    }
-  }, [searchInput])
+  const handleInputChange = (event) => {
+    const newValue = event.target.value;
+    setSearchInputValue(newValue)
+    setQuery(newValue)
+  };
+
   return (
     <form className="search-bar-container">
       <input
@@ -20,8 +19,8 @@ const Search = ({setQuery}) => {
         id="searchInput"
         className="search-input"
         placeholder="What kind of news do you want to see?"
-        onChange={(event) => setQuery(event.target.value)}
-        value={searchInput}
+        onChange={handleInputChange}
+        value={searchInputValue}
       />
     </form>
   );
