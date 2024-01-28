@@ -3,7 +3,6 @@
   flex-direction: column;
   background-color: #212529;
   color: #adb5bd;
-  align-items: center;
   justify-content: space-evenly;
   border: 1px solid #adb5bd;
   height: 100vh;
@@ -37,4 +36,146 @@
 
 .link {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 2560px) {
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+  .back-text-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .img-container {
+    display: flex;
+  }
+  .image {
+    width: 60vw;
+    height: 60vh;
+  }
+}
+
+
+@media only screen and (max-width: 1440px) {
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+  .back-text-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .img-container {
+    display: flex;
+  }
+  .image {
+    width: 60vw;
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+  }
+  .back-text-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .img-container {
+    display: flex;
+  }
+  .image {
+    width: 80vw;
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+  }
+  .back-text-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .img-container {
+    display: flex;
+  }
+  .image {
+    width: 80vw;
+    height: 20vh;
+  }
+}
+
+
+@media only screen and (max-width: 425px) {
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+  }
+  .back-text-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .img-container {
+    display: flex;
+  }
+  .image {
+    width: 80vw;
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+  }
+  .back-text-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .img-container {
+    display: flex;
+  }
+  .image {
+    width: 80vw;
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+  }
+  .back-text-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .img-container {
+    display: flex;
+  }
+  .image {
+    width: 80vw;
+    height: 20vh;
+  }
 }
