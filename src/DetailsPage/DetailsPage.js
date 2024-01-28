@@ -2,7 +2,6 @@ import "./DetailsPage.css";
 import {Link} from 'react-router-dom'
 
 function DetailsPage({ article }) {
-  console.log(article);
   return (
     <div>
       <div className="back-text-container">
@@ -18,6 +17,7 @@ function DetailsPage({ article }) {
         <p className="article-item date">{article.publishedAt}</p>
         <p className="article-item content">{article.content}</p>
         <p className="article-item source">{article.source.name}</p>
+        <a className="article-item link" href={article.url}>More Info</a>
       </div>
     </div>
   );

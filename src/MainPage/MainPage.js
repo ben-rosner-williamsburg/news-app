@@ -8,7 +8,7 @@ const MainPage = ({ articles, setQuery, handleClick}) => {
   const newsArticles = articles.map((article) => {
     return (
       <Link className="article" key={article.id} to={`/details/${article.id}`} onClick={() => handleClick(article.id)}>
-        <h3 className="article-item name">{article.name}</h3>
+        <h3 className="article-item name">{article.title}</h3>
         <img
           className="article-item image"
           src={article.urlToImage}
