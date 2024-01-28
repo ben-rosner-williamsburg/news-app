@@ -9,7 +9,6 @@ import { getArticles } from "../apiCalls";
 function App() {
   const [articles, setArticles] = useState([]);
   const [article, setArticle] = useState({});
-  const [error, setError] = useState("");
   const [query, setQuery] = useState("");
 
   useEffect(() => {
@@ -23,7 +22,7 @@ function App() {
         setArticles(articlesWithIds);
       })
       .catch((err) => {
-        setError(err.message);
+        console.error(err.message);
       });
   }, [query]);
 
